@@ -1,7 +1,7 @@
 import React from "react";
 
 export default () => (
-  <section className="credits">
+  <div className="credits">
     Challenge from{" "}
     <a
       href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT"
@@ -18,5 +18,5 @@ export default () => (
     >
       Mcklien
     </a>
-  </section>
+  </div>
 );

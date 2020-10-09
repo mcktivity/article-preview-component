@@ -15,7 +15,7 @@ export default () => {
   }
 
   return (
-    <article className="card">
+    <main className="card">
       <header>
         <img className="banner" src={Banner} alt="banner" />
       </header>
@@ -44,7 +44,7 @@ export default () => {
           </button>
         </footer>
       </section>
-    </article>
+    </main>
   );
 };
 
