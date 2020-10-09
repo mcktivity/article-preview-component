@@ -16,7 +16,9 @@ export default () => {
 
   return (
     <article className="card">
-      <img className="banner" src={Banner} alt="banner" />
+      <header>
+        <img className="banner" src={Banner} alt="banner" />
+      </header>
       <section className="content">
         <h3>
           Shift the overall look and feel by adding these wonderful touches to
@@ -47,10 +49,10 @@ export default () => {
 };
 
 const ShareBox = () => (
-  <section className="share-box">
+  <div className="share-box">
     <p>share</p>
     <img className="social-icon" src={FacebookIcon} alt="facebook" />
     <img className="social-icon" src={TwitterIcon} alt="twitter" />
     <img className="social-icon" src={PinterestIcon} alt="pinterest" />
-  </section>
+  </div>
 );

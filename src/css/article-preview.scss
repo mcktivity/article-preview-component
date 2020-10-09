@@ -61,7 +61,7 @@
     transition: all ease-out 0.2s;
   }
 
-  section.share-box {
+  div.share-box {
     position: absolute;
     align-items: center;
     > img.social-icon {
@@ -99,7 +99,7 @@
   }
   .card footer {
     padding: 1.4em 3em 2em;
-    section.share-box {
+    div.share-box {
       display: none;
     }
     &.active {
@@ -109,13 +109,13 @@
           filter: brightness(0) invert(1);
         }
       }
-      section.share-box {
+      div.share-box {
         display: flex;
         background: $Very-Dark-Grayish-Blue;
       }
     }
   }
-  .card section.share-box {
+  .card div.share-box {
     bottom: 88px;
     right: -70px;
     border-radius: 10px;
@@ -160,7 +160,7 @@
     padding: 0.8em 2.5em 1.7em;
     border-radius: 0 0 10px 10px;
     transition: all ease-out 0.2s;
-    section.share-box {
+    div.share-box {
       display: none;
     }
     &.active {
@@ -170,7 +170,7 @@
       div {
         display: none;
       }
-      section.share-box {
+      div.share-box {
         display: flex;
         position: absolute;
         left: 2.5em;
