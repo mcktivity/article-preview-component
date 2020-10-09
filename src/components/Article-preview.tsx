@@ -15,10 +15,8 @@ export default () => {
   }
 
   return (
-    <main className="card">
-      <header>
-        <img className="banner" src={Banner} alt="banner" />
-      </header>
+    <div className="card">
+      <img className="banner" src={Banner} alt="banner" />
       <section className="content">
         <h3>
           Shift the overall look and feel by adding these wonderful touches to
@@ -44,7 +42,7 @@ export default () => {
           </button>
         </footer>
       </section>
-    </main>
+    </div>
   );
 };
 
