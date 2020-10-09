@@ -10,6 +10,7 @@
 }
 
 .card img.banner {
+  display: block;
   object-fit: cover;
   height: 280px;
 }
@@ -23,6 +24,7 @@
   font-size: small;
   letter-spacing: 0.1px;
   line-height: 1.6em;
+  color: $Desaturated-Dark-Blue;
 }
 
 .card footer {
