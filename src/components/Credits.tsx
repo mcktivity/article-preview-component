@@ -10,7 +10,7 @@ export default () => (
     >
       Frontendmentor
     </a>
-    . Solved by{" "}
+    . Solution by{" "}
     <a
       href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT"
       target="_blank"

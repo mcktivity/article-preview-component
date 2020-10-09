@@ -15,7 +15,6 @@
 }
 
 .card h3 {
-  margin: 1.5em 2em 0;
   font-weight: 700;
   line-height: 1.4em;
 }
@@ -39,10 +38,11 @@
   }
   > div {
     margin-left: 1.2em;
+    letter-spacing: 0.15px;
     > p.name {
       font-weight: 700;
       color: $Very-Dark-Grayish-Blue;
-      letter-spacing: 0.1px;
+      line-height: 1.7em;
       margin: 0;
     }
     > time {
@@ -91,13 +91,14 @@
     width: 445px;
   }
   .card h3 {
+    margin: 1.6em 2em 0;
     font-size: 1.28em;
   }
   .card p.text {
     margin: 1em 3.1em 0;
   }
   .card footer {
-    padding: 1.35em 3em 2em;
+    padding: 1.4em 3em 2em;
     section.share-box {
       display: none;
     }
@@ -115,7 +116,7 @@
     }
   }
   .card section.share-box {
-    bottom: 85px;
+    bottom: 88px;
     right: -70px;
     border-radius: 10px;
     padding: 0.5em 2.9em;
@@ -146,7 +147,7 @@
   }
 
   .card h3 {
-    margin-top: 2.5em;
+    margin: 2.5em 2em 0;
     font-size: 1em;
     letter-spacing: 0.2px;
   }
