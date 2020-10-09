@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   background: white;
   border-radius: 10px;
-  box-shadow: 15px 30px 30px -10px rgba($Grayish-Blue, 0.125);
+  box-shadow: 15px 30px 30px -10px rgba($Grayish-Blue, 0.3);
   color: $Very-Dark-Grayish-Blue;
 }
 
@@ -17,13 +17,13 @@
 
 .card h3 {
   font-weight: 700;
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
 .card p.text {
-  font-size: small;
+  font-size: 13px;
   letter-spacing: 0.1px;
-  line-height: 1.6em;
+  line-height: 1.5em;
   color: $Desaturated-Dark-Blue;
 }
 
@@ -94,13 +94,13 @@
   }
   .card h3 {
     margin: 1.6em 2em 0;
-    font-size: 1.28em;
+    font-size: 20px;
   }
   .card p.text {
-    margin: 1em 3.1em 0;
+    margin: 1em 3.1em;
   }
   .card footer {
-    padding: 1.4em 3em 2em;
+    padding: 1.1539em 3em 2.462em;
     div.share-box {
       display: none;
     }
