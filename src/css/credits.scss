@@ -1,7 +1,17 @@
 div.credits {
   position: absolute;
   left: 0;
-  bottom: 0;
-  text-align: center;
+  bottom: 1em;
   width: 100%;
+
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+  p {
+    font-variant-caps: all-small-caps;
+  }
+  a {
+    text-decoration: overline;
+  }
 }

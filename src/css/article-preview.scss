@@ -1,4 +1,4 @@
-@import "main.scss";
+@import "variables.scss";
 
 .card {
   display: flex;
@@ -15,15 +15,10 @@
   height: 280px;
 }
 
-.card h3 {
-  font-weight: 700;
-  line-height: 1.3em;
-}
-
 .card p.text {
   font-size: 13px;
   letter-spacing: 0.1px;
-  line-height: 1.5em;
+  line-height: 20px;
   color: $Desaturated-Dark-Blue;
 }
 
@@ -53,6 +48,8 @@
   }
 
   > button.share-btn {
+    position: relative;
+    z-index: 1;
     width: 32px;
     height: 32px;
     border: none;
@@ -61,9 +58,19 @@
     margin-left: auto;
     background-color: $Light-Grayish-Blue;
     transition: all ease-out 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $Desaturated-Dark-Blue;
+      img.arrow {
+        filter: brightness(0) invert(1);
+      }
+    }
+    &:active {
+      background-color: $Light-Grayish-Blue !important;
+    }
   }
 
-  div.share-box {
+  .share-box {
     position: absolute;
     align-items: center;
     > img.social-icon {
@@ -95,13 +102,16 @@
   .card h3 {
     margin: 1.6em 2em 0;
     font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 28px;
   }
   .card p.text {
-    margin: 1em 3.1em;
-  }
+    margin: 10px 40px;
+}
   .card footer {
-    padding: 1.1539em 3em 2.462em;
-    div.share-box {
+    padding: 12px 40px 32px;
+    .share-box {
       display: none;
     }
     &.active {
@@ -111,18 +121,18 @@
           filter: brightness(0) invert(1);
         }
       }
-      div.share-box {
+      .share-box {
         display: flex;
         background: $Very-Dark-Grayish-Blue;
       }
     }
   }
-  .card div.share-box {
-    bottom: 88px;
-    right: -70px;
+  .card .share-box {
+    bottom: 98px;
+    right: -72px;
     border-radius: 10px;
-    padding: 0.5em 2.9em;
-    box-shadow: 0px 20px 30px -10px rgba($Grayish-Blue, 0.5);
+    padding: 1.3em 2.9em;
+    box-shadow: 0px 10px 10px -10px rgba($Grayish-Blue, 0.5);
     &::after {
       content: "";
       position: absolute;
@@ -137,8 +147,9 @@
 
 @media only screen and (max-width: 730px) {
   .card {
-    max-width: 87vw;
-    margin: 9vh auto;
+    margin: 10vh auto;
+    min-width: 328px;
+    max-width: 65vw;
   }
 
   img.banner {
@@ -149,20 +160,22 @@
   }
 
   .card h3 {
-    margin: 2.5em 2em 0;
-    font-size: 1em;
+    margin: 2.3em 2.1em 0;
+    font-size: 16px;
+    font-weight: 700;
     letter-spacing: 0.2px;
+    line-height: 24px;
   }
 
   .card p.text {
-    margin: 1.2em 2.5em 1.5em;
+    margin: 1.1em 2.55em 1.5em;
   }
 
   .card footer {
     padding: 0.8em 2.5em 1.7em;
     border-radius: 0 0 10px 10px;
     transition: all ease-out 0.2s;
-    div.share-box {
+    .share-box {
       display: none;
     }
     &.active {
@@ -172,7 +185,7 @@
       div {
         display: none;
       }
-      div.share-box {
+      .share-box {
         display: flex;
         position: absolute;
         left: 2.5em;
